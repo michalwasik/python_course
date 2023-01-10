@@ -1,0 +1,3 @@
+[submodule "lesson_22/lesson_22/snake"]
+	path = lesson_22/lesson_22/snake
+	url = https://github.com/michalwasik/snake

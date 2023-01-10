@@ -1,0 +1,76 @@
+Chicago 4 01:52
+Columbus 5 02:52
+Riyadh  6 10:52
+Copenhagen  4 08:52
+Kuwait City 6 10:52
+Rome    2 08:52
+Dallas  2 01:52
+Salt Lake City  7 01:52
+San Francisco 1 00:52
+Amsterdam 5 08:52
+Denver 3 01:52
+San Salvador 2 01:52
+Detroit 2 02:52
+Las Vegas 7 00:52
+Santiago    2 04:52
+Anchorage Sat 23:52
+Ankara 1 10:52
+Lisbon  7 07:52
+São Paulo   6 05:52
+Dubai   2 11:52
+London  5 07:52
+Seattle 5 00:52
+Dublin  5 07:52
+Los Angeles 4 00:52
+Athens  4 09:52
+Edmonton 7 01:52
+Madrid  7 08:52
+Shanghai 1 15:52
+Atlanta 2 02:52
+Frankfurt   4 08:52
+Singapore 1 15:52
+Auckland 4 20:52
+Halifax 7 03:52
+Melbourne 2 18:52
+Stockholm   2 08:52
+Barcelona   6 08:52
+Miami   4 02:52
+Minneapolis 6 01:52
+Sydney 3 18:52
+Beirut  2 09:52
+Helsinki    3 09:52
+Montreal    2 02:52
+Berlin  5 08:52
+Houston 3 01:52
+Moscow  4 10:52
+Indianapolis    7 02:52   
+Boston  6 02:52
+Tokyo   3 16:52
+Brasilia 3 05:52
+Istanbul 2 10:52
+Toronto 4 02:52
+Vancouver   5 00:52
+Brussels    2 08:52
+Jerusalem   1 09:52
+New Orleans 2 01:52
+Vienna  5 08:52
+Bucharest   3 09:52
+Johannesburg    7 09:52
+New York    4 02:52
+Warsaw  3 08:52
+Budapest    4 08:52
+Oslo    3 08:52
+Washington DC   2 02:52
+Ottawa  5 02:52
+Winnipeg    2 01:52
+Cairo   3 09:52
+Paris   5 08:52
+Calgary 2 01:52
+Kathmandu   5 13:37
+Philadelphia    1 02:52
+Zurich  2 08:52
+Cape Town   2 09:52
+Phoenix 6 00:52       
+Prague  7 08:52       
+Casablanca  2 07:52
+Reykjavik   4 07:52

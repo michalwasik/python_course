@@ -1,0 +1,14 @@
+git clone git@github.com:michalwasik/filips_repo.git
+git add -A
+git commit -m 'milosc'
+git add -A
+git commit -m 'thats love for sure'
+git add -A
+git commit -m 'that was tru love'
+git add -A
+git commit -m 'hard truth'
+git push -u origin
+git rebase -i --root
+git rebase -i --root
+git push -f
+
