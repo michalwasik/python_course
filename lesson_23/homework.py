@@ -1,23 +1,23 @@
 # Task 1
 
 class Artist:
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
         self.albums = {}
 
-    def create_album(self, name):
+    def create_album(self, name):   # -> Type[Album]
         album = Album(name, self)
         self.albums[album] = []
         return album
 
 
 class Album:
-    def __init__(self, name, artist):
+    def __init__(self, name: str, artist: 'Artist'):
         self.name = name
         self.artist = artist
         self.songs = []
 
-    def create_song(self, name):
+    def create_song(self, name: str):
         song = Song(name, self, self.artist)
         self.songs.append(song)
         self.artist.albums[self].append(song)
@@ -25,18 +25,18 @@ class Album:
 
 
 class Song:
-    def __init__(self, name, album, artist):
+    def __init__(self, name: str, album: 'Album', artist: 'Artist'):
         self.name = name
         self.artist = artist
         self.album = album
 
 
 class Playlist:
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
         self.songs = []
 
-    def add_song(self, song):
+    def add_song(self, song: 'Song'):
         self.songs.append(song)
 
 
@@ -103,29 +103,56 @@ data = [('miciorro', 'miciorro@op.pl', 18),
         ('miciorro', 'miciorro@gowno.com', 20),
         ('zabcia', 'zabcia@onet.pl', 20),
         ('kox', 'kox@op.pl', 15),
-        ('bocian', 'bocianos@op.', 23),
+        ('bocian', 'bocianos@op.pl', 23),
         ]
 valid_usernames = set()
 
 
-for username, mail, age in data:
+def username_check(username):
     if username in valid_usernames:
-        print(UsernameExists(username))
-        continue
+        raise UsernameExists(username)
+
+
+def age_is_positive(age):
     if age < 0:
-        print(AgeNotPositive(age))
-        continue
+        raise AgeNotPositive(age)
+
+
+def age_under_16(age):
     if age < 16:
-        print(UserIsUnderage(age))
-        continue
+        raise UserIsUnderage(age)
+
+
+def mail_check(mail):
     if '@' not in mail:
-        print(InvalidMail(mail))
-        continue
+        raise InvalidMail(mail)
     usr_mail, domain = mail.split('@')
     if usr_mail == '' or domain == '':
-        print(InvalidMail(mail))
+        raise InvalidMail(mail)
+
+
+for username, mail, age in data:
+    try:
+        username_check(username)
+    except UsernameExists as err:
+        print(err)
         continue
-    else:
-        valid_usernames.add(username)
+    try:
+        age_is_positive(age)
+    except AgeNotPositive as err:
+        print(err)
+        continue
+    try:
+        age_under_16(age)
+    except UserIsUnderage as err:
+        print(err)
+        continue
+    try:
+        mail_check(mail)
+    except InvalidMail as err:
+        print(err)
+        continue
+    # finally:        # przy uzyciu finally continue z invalid maila errora nie dziala
+    valid_usernames.add(username)
 
 print(valid_usernames)
